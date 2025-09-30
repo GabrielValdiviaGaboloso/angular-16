@@ -1,7 +1,7 @@
+import './localize'; // debe coincidir exactamente con el nombre y ubicación
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-
 import { AppModule } from './app/app.module';
 
-
-platformBrowserDynamic().bootstrapModule(AppModule)
+platformBrowserDynamic()
+  .bootstrapModule(AppModule)
   .catch(err => console.error(err));

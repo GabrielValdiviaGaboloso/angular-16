@@ -29,7 +29,7 @@
              name="price"
              required
              min="1"
-             max="100"
+             max="100000"
              [(ngModel)]="product.price"
              #priceModel="ngModel">
       <div class="text-danger mt-1" *ngIf="priceModel.invalid && priceModel.touched">
@@ -44,12 +44,12 @@
              class="form-control"
              name="stock"
              required
-             min="0"
+             min="1"
              max="20"
              [(ngModel)]="product.stock"
              #stockModel="ngModel">
       <div class="text-danger mt-1" *ngIf="stockModel.invalid && stockModel.touched">
-        El stock debe estar entre 0 y 20.
+        El stock debe estar entre 1 y 20.
       </div>
     </div>
 

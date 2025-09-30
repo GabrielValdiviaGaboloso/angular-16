@@ -16,4 +16,17 @@ Este proyecto es un ejemplo de un dashboard de productos con Angular y JSON Serv
 1. Clona este repositorio:
 
 ```bash
-git clone <https://github.com/GabrielValdiviaGaboloso/angular-16>
+https://github.com/GabrielValdiviaGaboloso/angular-16.git
+```
+2. Instalacion de dependencia:
+```bash
+npm install
+```
+3. Genrador de base de dato:
+```bash
+node generar-db.js
+```
+4. Iniciar base de dato
+```bash
+json-server --watch db.json --port 3000
+```

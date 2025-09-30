@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Product } from '../../models/product.model';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ModalProductoComponent } from '../modal-producto/modal-producto.component';
@@ -9,17 +9,37 @@ import { ProductService } from 'src/app/shared/services/product-service.service'
   templateUrl: './product-dashboard.component.html',
   styleUrls: ['./product-dashboard.component.css']
 })
-export class ProductDashboardComponent implements OnInit {
+export class ProductDashboardComponent implements OnInit, OnDestroy {
   products: Product[] = [];
   paginatedProducts: Product[] = [];
   page = 1;
   pageSize = 4;
   collectionSize = 0;
+  maxSize = 8;
+
+  resizeListener: any;
 
   constructor(private productService: ProductService, private modalService: NgbModal) {}
 
   ngOnInit() {
     this.loadProducts();
+    this.updateMaxSize();
+
+    // Guardamos la referencia para remover luego
+    this.resizeListener = () => this.updateMaxSize();
+    window.addEventListener('resize', this.resizeListener);
+  }
+
+  ngOnDestroy() {
+    window.removeEventListener('resize', this.resizeListener);
+  }
+
+  updateMaxSize() {
+    if (window.innerWidth < 768) { // móvil
+      this.maxSize = 2;
+    } else { // PC
+      this.maxSize = 8;
+    }
   }
 
   loadProducts() {
@@ -51,16 +71,14 @@ export class ProductDashboardComponent implements OnInit {
     this.productService.deleteProduct(id).subscribe(() => this.loadProducts());
   }
 
-  // Se dispara al cambiar la página
   onPageChange(page: number) {
     this.page = page;
     this.refreshProducts();
   }
 
-  // Se dispara al cambiar items por página
   onPageSizeChange(size: number) {
     this.pageSize = size;
-    this.page = 1; // reiniciar a la primera página
+    this.page = 1; // reinicia a la primera página
     this.refreshProducts();
   }
 }
