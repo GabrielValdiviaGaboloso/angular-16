@@ -22,11 +22,11 @@ https://github.com/GabrielValdiviaGaboloso/angular-16.git
 ```bash
 npm install
 ```
-3. Genrador de base de dato:
+3. Generador de base de dato:
 ```bash
 node generar-db.js
 ```
-4. Iniciar base de dato
+4. Iniciar base de dato:
 ```bash
 json-server --watch db.json --port 3000
 ```
