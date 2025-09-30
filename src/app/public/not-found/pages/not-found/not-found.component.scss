@@ -1,0 +1,37 @@
+.notfound-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh; // ocupa buena parte de la pantalla
+  padding: 20px;
+
+  .notfound-img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .notfound-text {
+    text-align: center;
+
+    .title {
+      display: block;
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #111;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    button {
+      font-size: 16px;
+    }
+  }
+}

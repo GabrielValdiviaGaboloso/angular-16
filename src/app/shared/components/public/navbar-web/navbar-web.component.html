@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-xl navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+
+
+      <button class="navbar-toggler" type="button"  (click)="toggleNavbar = !toggleNavbar" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class=navbar-toggler-icon></span>
+      </button>
+
+      <a class="navbar-brand ms-5"[routerLink]="['']"><img class=" logo-nav-es ms-3" alt="Zenta" src="./assets/img/logo.png" ></a>
+
+      <div class="collapse navbar-collapse justify-content-end bd-highlight mb-2 ml-5" id="navbarSupportedContent" [ngbCollapse]="toggleNavbar">
+        <ul class="navbar-nav mr-auto me-5 my-2 my-lg-0 ps-5 d-flex align-items-center bd-highlight mb-2">
+            
+        </ul>
+
+      </div>
+    </div>
+  </nav>

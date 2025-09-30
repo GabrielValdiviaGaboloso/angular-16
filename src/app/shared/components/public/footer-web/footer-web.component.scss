@@ -1,0 +1,58 @@
+.footer {
+  background-color: #111; // oscuro como navbar
+  color: #fff;
+  padding: 20px 0;
+  font-size: 14px;
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    .footer-logo {
+      img.logo-footer {
+        height: 33px;
+        width: auto; // mantiene proporción
+      }
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+          color: #dc3545; // rojo, igual que el navbar
+        }
+      }
+    }
+
+    .footer-info {
+      p {
+        margin: 2px 0;
+      }
+    }
+  }
+
+  // Responsive
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .footer-links {
+      justify-content: center;
+    }
+  }
+}
