@@ -33,20 +33,16 @@ export class ProductService {
       );
   }
 
-  // Manejo de errores centralizado
   private handleError(error: HttpErrorResponse) {
     let errorMessage = 'Ocurrió un error desconocido';
 
     if (error.error instanceof ErrorEvent) {
-      // Error del lado del cliente
       errorMessage = `Error del cliente: ${error.error.message}`;
     } else {
-      // Error del lado del servidor
       errorMessage = `Error del servidor: ${error.status}, mensaje: ${error.message}`;
     }
 
     console.error(errorMessage);
-    // Aquí puedes mostrar una alerta o usar un servicio de notificaciones
     return throwError(() => new Error(errorMessage));
   }
 }

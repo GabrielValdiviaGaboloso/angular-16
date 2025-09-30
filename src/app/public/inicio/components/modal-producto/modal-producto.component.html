@@ -5,47 +5,58 @@
 
 <div class="modal-body">
   <form #productForm="ngForm" (ngSubmit)="saveProduct(productForm)">
+
+    <!-- Nombre -->
     <div class="mb-3">
-      <label for="name" class="form-label">Nombre</label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        class="form-control"
-        required
-        [(ngModel)]="product.name"
-      />
+      <label class="form-label">Nombre</label>
+      <input type="text"
+             class="form-control"
+             name="name"
+             required
+             [(ngModel)]="product.name"
+             #nameModel="ngModel">
+      <!-- Mensaje de error -->
+      <div class="text-danger mt-1" *ngIf="nameModel.invalid && nameModel.touched">
+        El nombre solo puede tener letras, números y espacios.
+      </div>
     </div>
 
+    <!-- Precio -->
     <div class="mb-3">
-      <label for="price" class="form-label">Precio</label>
-      <input
-        type="number"
-        id="price"
-        name="price"
-        class="form-control"
-        required
-        min="1"
-        [(ngModel)]="product.price"
-      />
+      <label class="form-label">Precio</label>
+      <input type="number"
+             class="form-control"
+             name="price"
+             required
+             min="1"
+             max="100"
+             [(ngModel)]="product.price"
+             #priceModel="ngModel">
+      <div class="text-danger mt-1" *ngIf="priceModel.invalid && priceModel.touched">
+        El precio debe estar entre 1 y 100.000.
+      </div>
     </div>
 
+    <!-- Stock -->
     <div class="mb-3">
-      <label for="stock" class="form-label">Stock</label>
-      <input
-        type="number"
-        id="stock"
-        name="stock"
-        class="form-control"
-        required
-        min="0"
-        [(ngModel)]="product.stock"
-      />
+      <label class="form-label">Stock</label>
+      <input type="number"
+             class="form-control"
+             name="stock"
+             required
+             min="0"
+             max="20"
+             [(ngModel)]="product.stock"
+             #stockModel="ngModel">
+      <div class="text-danger mt-1" *ngIf="stockModel.invalid && stockModel.touched">
+        El stock debe estar entre 0 y 20.
+      </div>
     </div>
 
     <div class="modal-footer">
       <button type="button" class="btn btn-outline-secondary" (click)="activeModal.dismiss('Close click')">Cancelar</button>
       <button type="submit" class="btn btn-primary" [disabled]="productForm.invalid">Guardar</button>
     </div>
+
   </form>
 </div>

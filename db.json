@@ -1,14 +1,604 @@
 {
   "products": [
-    { "id": 1, "name": "Mouse Logitech MX Master 3", "price": 75000, "stock": 12 },
-    { "id": 2, "name": "Teclado Mecánico Corsair K70", "price": 120000, "stock": 8 },
-    { "id": 3, "name": "Monitor LG UltraGear 27\"", "price": 300000, "stock": 5 },
-    { "id": 4, "name": "Disco SSD Samsung 1TB", "price": 95000, "stock": 20 },
-    { "id": 5, "name": "Memoria RAM 16GB Corsair Vengeance", "price": 85000, "stock": 15 },
-    { "id": 6, "name": "Tarjeta Gráfica NVIDIA RTX 4060", "price": 450000, "stock": 3 },
-    { "id": 7, "name": "Fuente de Poder 650W EVGA", "price": 65000, "stock": 10 },
-    { "id": 8, "name": "Gabinete NZXT H510", "price": 70000, "stock": 6 },
-    { "id": 9, "name": "Auriculares HyperX Cloud II", "price": 45000, "stock": 18 },
-    { "id": 10, "name": "Webcam Logitech C920", "price": 55000, "stock": 7 }
+    {
+      "id": 1,
+      "name": "Impresora 1",
+      "price": 36148,
+      "stock": 12
+    },
+    {
+      "id": 2,
+      "name": "Router 2",
+      "price": 42203,
+      "stock": 11
+    },
+    {
+      "id": 3,
+      "name": "Disco Duro 3",
+      "price": 72597,
+      "stock": 10
+    },
+    {
+      "id": 4,
+      "name": "Tablet 4",
+      "price": 41741,
+      "stock": 7
+    },
+    {
+      "id": 5,
+      "name": "Router 5",
+      "price": 94563,
+      "stock": 5
+    },
+    {
+      "id": 6,
+      "name": "USB 6",
+      "price": 15155,
+      "stock": 7
+    },
+    {
+      "id": 7,
+      "name": "Mouse 7",
+      "price": 94573,
+      "stock": 1
+    },
+    {
+      "id": 8,
+      "name": "Impresora 8",
+      "price": 20818,
+      "stock": 2
+    },
+    {
+      "id": 9,
+      "name": "Monitor 9",
+      "price": 68642,
+      "stock": 6
+    },
+    {
+      "id": 10,
+      "name": "Mouse 10",
+      "price": 5930,
+      "stock": 13
+    },
+    {
+      "id": 11,
+      "name": "USB 11",
+      "price": 16406,
+      "stock": 4
+    },
+    {
+      "id": 12,
+      "name": "Laptop 12",
+      "price": 82045,
+      "stock": 12
+    },
+    {
+      "id": 13,
+      "name": "Auriculares 13",
+      "price": 48849,
+      "stock": 9
+    },
+    {
+      "id": 14,
+      "name": "Auriculares 14",
+      "price": 99742,
+      "stock": 11
+    },
+    {
+      "id": 15,
+      "name": "Auriculares 15",
+      "price": 71540,
+      "stock": 12
+    },
+    {
+      "id": 16,
+      "name": "Mouse 16",
+      "price": 94857,
+      "stock": 2
+    },
+    {
+      "id": 17,
+      "name": "Tablet 17",
+      "price": 87551,
+      "stock": 0
+    },
+    {
+      "id": 18,
+      "name": "Teclado 18",
+      "price": 54866,
+      "stock": 9
+    },
+    {
+      "id": 19,
+      "name": "Mouse 19",
+      "price": 28129,
+      "stock": 10
+    },
+    {
+      "id": 20,
+      "name": "Mouse 20",
+      "price": 97457,
+      "stock": 14
+    },
+    {
+      "id": 21,
+      "name": "Disco Duro 21",
+      "price": 80881,
+      "stock": 15
+    },
+    {
+      "id": 22,
+      "name": "USB 22",
+      "price": 69249,
+      "stock": 18
+    },
+    {
+      "id": 23,
+      "name": "Webcam 23",
+      "price": 26556,
+      "stock": 9
+    },
+    {
+      "id": 24,
+      "name": "Impresora 24",
+      "price": 71290,
+      "stock": 0
+    },
+    {
+      "id": 25,
+      "name": "Laptop 25",
+      "price": 26301,
+      "stock": 8
+    },
+    {
+      "id": 26,
+      "name": "Webcam 26",
+      "price": 24495,
+      "stock": 2
+    },
+    {
+      "id": 27,
+      "name": "Laptop 27",
+      "price": 11123,
+      "stock": 5
+    },
+    {
+      "id": 28,
+      "name": "Mouse 28",
+      "price": 3617,
+      "stock": 12
+    },
+    {
+      "id": 29,
+      "name": "Auriculares 29",
+      "price": 67956,
+      "stock": 15
+    },
+    {
+      "id": 30,
+      "name": "Mouse 30",
+      "price": 88373,
+      "stock": 6
+    },
+    {
+      "id": 31,
+      "name": "Tablet 31",
+      "price": 48676,
+      "stock": 7
+    },
+    {
+      "id": 32,
+      "name": "Teclado 32",
+      "price": 16883,
+      "stock": 4
+    },
+    {
+      "id": 33,
+      "name": "Tablet 33",
+      "price": 85602,
+      "stock": 0
+    },
+    {
+      "id": 34,
+      "name": "Mouse 34",
+      "price": 81902,
+      "stock": 18
+    },
+    {
+      "id": 35,
+      "name": "Webcam 35",
+      "price": 24813,
+      "stock": 17
+    },
+    {
+      "id": 36,
+      "name": "Auriculares 36",
+      "price": 18673,
+      "stock": 8
+    },
+    {
+      "id": 37,
+      "name": "Tablet 37",
+      "price": 78127,
+      "stock": 1
+    },
+    {
+      "id": 38,
+      "name": "Webcam 38",
+      "price": 40929,
+      "stock": 7
+    },
+    {
+      "id": 39,
+      "name": "Mouse 39",
+      "price": 88561,
+      "stock": 19
+    },
+    {
+      "id": 40,
+      "name": "Teclado 40",
+      "price": 82940,
+      "stock": 0
+    },
+    {
+      "id": 41,
+      "name": "Disco Duro 41",
+      "price": 21188,
+      "stock": 12
+    },
+    {
+      "id": 42,
+      "name": "Auriculares 42",
+      "price": 71920,
+      "stock": 8
+    },
+    {
+      "id": 43,
+      "name": "Tablet 43",
+      "price": 34225,
+      "stock": 1
+    },
+    {
+      "id": 44,
+      "name": "Tablet 44",
+      "price": 40749,
+      "stock": 6
+    },
+    {
+      "id": 45,
+      "name": "Disco Duro 45",
+      "price": 21572,
+      "stock": 4
+    },
+    {
+      "id": 46,
+      "name": "Monitor 46",
+      "price": 95286,
+      "stock": 16
+    },
+    {
+      "id": 47,
+      "name": "Webcam 47",
+      "price": 54787,
+      "stock": 15
+    },
+    {
+      "id": 48,
+      "name": "Monitor 48",
+      "price": 70624,
+      "stock": 10
+    },
+    {
+      "id": 49,
+      "name": "USB 49",
+      "price": 4071,
+      "stock": 9
+    },
+    {
+      "id": 50,
+      "name": "Mouse 50",
+      "price": 86124,
+      "stock": 10
+    },
+    {
+      "id": 51,
+      "name": "Tablet 51",
+      "price": 6550,
+      "stock": 6
+    },
+    {
+      "id": 52,
+      "name": "Laptop 52",
+      "price": 29869,
+      "stock": 5
+    },
+    {
+      "id": 53,
+      "name": "Tablet 53",
+      "price": 43244,
+      "stock": 16
+    },
+    {
+      "id": 54,
+      "name": "Laptop 54",
+      "price": 36266,
+      "stock": 7
+    },
+    {
+      "id": 55,
+      "name": "Laptop 55",
+      "price": 13164,
+      "stock": 4
+    },
+    {
+      "id": 56,
+      "name": "Router 56",
+      "price": 75622,
+      "stock": 18
+    },
+    {
+      "id": 57,
+      "name": "Disco Duro 57",
+      "price": 49973,
+      "stock": 7
+    },
+    {
+      "id": 58,
+      "name": "Teclado 58",
+      "price": 16937,
+      "stock": 2
+    },
+    {
+      "id": 59,
+      "name": "Mouse 59",
+      "price": 11425,
+      "stock": 17
+    },
+    {
+      "id": 60,
+      "name": "Impresora 60",
+      "price": 69365,
+      "stock": 10
+    },
+    {
+      "id": 61,
+      "name": "Router 61",
+      "price": 100524,
+      "stock": 16
+    },
+    {
+      "id": 62,
+      "name": "Disco Duro 62",
+      "price": 24267,
+      "stock": 13
+    },
+    {
+      "id": 63,
+      "name": "Impresora 63",
+      "price": 5252,
+      "stock": 16
+    },
+    {
+      "id": 64,
+      "name": "Mouse 64",
+      "price": 44053,
+      "stock": 11
+    },
+    {
+      "id": 65,
+      "name": "Monitor 65",
+      "price": 17240,
+      "stock": 16
+    },
+    {
+      "id": 66,
+      "name": "Disco Duro 66",
+      "price": 3046,
+      "stock": 1
+    },
+    {
+      "id": 67,
+      "name": "Laptop 67",
+      "price": 62318,
+      "stock": 11
+    },
+    {
+      "id": 68,
+      "name": "USB 68",
+      "price": 5106,
+      "stock": 11
+    },
+    {
+      "id": 69,
+      "name": "Tablet 69",
+      "price": 43046,
+      "stock": 0
+    },
+    {
+      "id": 70,
+      "name": "Laptop 70",
+      "price": 67047,
+      "stock": 6
+    },
+    {
+      "id": 71,
+      "name": "Monitor 71",
+      "price": 56069,
+      "stock": 11
+    },
+    {
+      "id": 72,
+      "name": "Mouse 72",
+      "price": 56707,
+      "stock": 1
+    },
+    {
+      "id": 73,
+      "name": "Laptop 73",
+      "price": 77064,
+      "stock": 11
+    },
+    {
+      "id": 74,
+      "name": "USB 74",
+      "price": 80752,
+      "stock": 9
+    },
+    {
+      "id": 75,
+      "name": "Router 75",
+      "price": 76471,
+      "stock": 7
+    },
+    {
+      "id": 76,
+      "name": "Auriculares 76",
+      "price": 1518,
+      "stock": 6
+    },
+    {
+      "id": 77,
+      "name": "Disco Duro 77",
+      "price": 82604,
+      "stock": 1
+    },
+    {
+      "id": 78,
+      "name": "Monitor 78",
+      "price": 71266,
+      "stock": 6
+    },
+    {
+      "id": 79,
+      "name": "Webcam 79",
+      "price": 88203,
+      "stock": 3
+    },
+    {
+      "id": 80,
+      "name": "Tablet 80",
+      "price": 45939,
+      "stock": 5
+    },
+    {
+      "id": 81,
+      "name": "Disco Duro 81",
+      "price": 25481,
+      "stock": 13
+    },
+    {
+      "id": 82,
+      "name": "Mouse 82",
+      "price": 1806,
+      "stock": 13
+    },
+    {
+      "id": 83,
+      "name": "Disco Duro 83",
+      "price": 8527,
+      "stock": 4
+    },
+    {
+      "id": 84,
+      "name": "Router 84",
+      "price": 15710,
+      "stock": 8
+    },
+    {
+      "id": 85,
+      "name": "Laptop 85",
+      "price": 93377,
+      "stock": 12
+    },
+    {
+      "id": 86,
+      "name": "Laptop 86",
+      "price": 55074,
+      "stock": 13
+    },
+    {
+      "id": 87,
+      "name": "Impresora 87",
+      "price": 61655,
+      "stock": 6
+    },
+    {
+      "id": 88,
+      "name": "Laptop 88",
+      "price": 85733,
+      "stock": 15
+    },
+    {
+      "id": 89,
+      "name": "Router 89",
+      "price": 28613,
+      "stock": 14
+    },
+    {
+      "id": 90,
+      "name": "Webcam 90",
+      "price": 88813,
+      "stock": 18
+    },
+    {
+      "id": 91,
+      "name": "Laptop 91",
+      "price": 3712,
+      "stock": 3
+    },
+    {
+      "id": 92,
+      "name": "Auriculares 92",
+      "price": 72055,
+      "stock": 0
+    },
+    {
+      "id": 93,
+      "name": "Mouse 93",
+      "price": 34560,
+      "stock": 11
+    },
+    {
+      "id": 94,
+      "name": "Monitor 94",
+      "price": 29422,
+      "stock": 19
+    },
+    {
+      "id": 95,
+      "name": "Tablet 95",
+      "price": 40063,
+      "stock": 19
+    },
+    {
+      "id": 96,
+      "name": "Laptop 96",
+      "price": 58095,
+      "stock": 17
+    },
+    {
+      "id": 97,
+      "name": "Webcam 97",
+      "price": 56123,
+      "stock": 16
+    },
+    {
+      "id": 98,
+      "name": "Router 98",
+      "price": 53501,
+      "stock": 1
+    },
+    {
+      "id": 99,
+      "name": "Impresora 99",
+      "price": 79452,
+      "stock": 16
+    },
+    {
+      "id": 100,
+      "name": "USB 100",
+      "price": 65833,
+      "stock": 18
+    }
   ]
 }
