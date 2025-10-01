@@ -30,3 +30,7 @@ node generar-db.js
 ```bash
 json-server --watch db.json --port 3000
 ```
+5. iniciar angular
+```bash
+ng serve
+```
